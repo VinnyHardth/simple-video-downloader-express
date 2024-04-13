@@ -1,25 +1,3 @@
-// import youtubedl from "youtube-dl-exec";
-// import * as path from "path";
-
-// async function downloadVideo(url: string, outputPath: string) {
-//   try {
-//     await youtubedl(url, {
-//       output: outputPath, // Caminho do arquivo de saída
-//     });
-//     console.log("Vídeo baixado com sucesso!");
-//   } catch (error) {
-//     console.error("Ocorreu um erro ao baixar o vídeo:", error);
-//   }
-// }
-
-// // Exemplo de uso
-// const videoURL = "https://www.youtube.com/watch?v=lmQKBde9qRA";
-// const outputDirectory = path.join(__dirname, "videos");
-// const outputFilename = "video.mp4"; // Nome do arquivo de saída
-// const outputPath = path.join(outputDirectory, outputFilename);
-
-// downloadVideo(videoURL, outputPath);
-
 import dotenv from "dotenv";
 import express from "express";
 import router from "./router/router";

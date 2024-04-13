@@ -35,6 +35,7 @@
     "morgan": "^1.10.0",
     "node-sass-middleware": "^1.1.0",
     "sass": "^1.72.0",
-    "youtube-dl-exec": "^3.0.0"
+    "youtube-dl-exec": "^3.0.0",
+    "ytdl-core": "^4.11.5"
   }
 }
