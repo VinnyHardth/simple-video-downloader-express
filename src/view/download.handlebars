@@ -1,12 +1,18 @@
 <div class="container mt-3">
-    <form>
+    <form method="post" action="startDownload">
         <div class="mb-3">
             <label for="mediaType" class="form-label">Selecione o tipo de mídia:</label>
-            <select class="form-select" id="mediaType">
+            <select class="form-select" id="mediaType" name="mediaType">
                 <option value="audio">Somente Áudio</option>
                 <option value="video">Vídeo</option>
             </select>
         </div>
+
+        <div class="mb-3">
+            <label for="url" class="form-label">Link do vídeo:</label>
+            <input type="text" class="form-control" id="url" name="url" value="{{videoURL}}" readonly>
+        </div>
+
         <div class="mb-3" id="resolutionDropdownDiv" style="display:none;">
             <label for="resolution" class="form-label">Resolução:</label>
             <select class="form-select" id="resolution">
@@ -15,13 +21,10 @@
         </div>
 
         <div class="mb-3">
-            <label for="link" class="form-label">Nome do vídeo:</label>
-            <input type="text" class="form-control" id="link" value="{{videoInfo.name}}">
+            <label for="name" class="form-label">Nome do vídeo:</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{videoInfo.name}}">
         </div>
-
 
         <button type="submit" class="btn btn-primary">Baixar</button>
     </form>
 </div>
-
-{{{name}}}
