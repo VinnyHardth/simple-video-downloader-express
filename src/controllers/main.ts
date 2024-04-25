@@ -58,8 +58,7 @@ const downloadVideo = async (req: Request, res: Response) => {
         );
         await middleware.downloadAudio(videoURL, outputPath);
       }
-
-      res.redirect("/");
+      res.download(outputPath);
     } catch (error) {
       console.error("Ocorreu um erro ao baixar o vídeo:", error);
       res.status(500).send("Ocorreu um erro ao baixar o vídeo");
